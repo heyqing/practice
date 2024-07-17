@@ -1,0 +1,11 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.heyqing</groupId>
+        <artifactId>NIO-chat</artifactId>
+        <version>v1.0.0</version>
+    </parent>
+    <groupId>com.heyqing</groupId>
+    <artifactId>chat-client</artifactId>
+    <version>v1.0.0</version>
+</project>
