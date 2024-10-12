@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: redis-dome
+  redis:
+    database: 0
+    port: 6379
+    host: 192.168.200.128
+    password: 123456

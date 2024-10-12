@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spark:
+  hostUrl: https://spark-api.xf-yun.com/v4.0/chat
+  appid: 01b78af1
+  apiSecret: NWFkOWY2YWFmZGMyNWE3ZTU5NzcyYWUx
+  apiKey: 02e230a6e8129c5cc92595fc5f8b5059
+  domain: 4.0Ultra
+
