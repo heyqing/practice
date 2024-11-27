@@ -2,7 +2,7 @@
 import * as THREE from "three"; // 导入three
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js"; //导入轨道控制器
 import { GUI } from "three/examples/jsm/libs/lil-gui.module.min.js" //导入lil.gui
-
+import * as TWEEN from "three/examples/jsm/libs/tween.module"
 
 //创建场景
 const scene = new THREE.Scene();
@@ -48,6 +48,10 @@ orbitControls.dampingFactor = 0.05;
 //设置自动旋转
 orbitControls.autoRotate = true;
 
+// 创建间隔动画
+const tween = new TWEEN.Tween(geometry.position);
+tween.to({ x: 4 }, 5000);
+tween.start();
 
 //定义渲染函数
 function animate() {
@@ -57,6 +61,7 @@ function animate() {
   // cube.rotation.y += 0.01;
   //渲染
   renderer.render(scene, camera);
+  // tween.update();
 }
 animate();
 

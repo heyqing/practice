@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HQweb 欢迎你 ^_^ </title>
+</head>
+
+<body>
+  <h1>这里是 Compare 比较的例子</h1>
+
+  <div id="lines"></div>
+
+  <script>
+    const lines = [
+      '这是第一行', '这是第二行', '这是第三行', '这是第四行',
+      '这是第五行', '这是第六行', '这是第七行', '这是第八行',
+      '这是第九行', '这是第十行'
+    ];
+    const container = document.getElementById('lines');
+    lines.forEach(line => {
+      const span = document.createElement('span');
+      span.textContent = line;
+      container.appendChild(span);
+      container.appendChild(document.createElement('br'));
+    });
+  </script>
+</body>
+
+</html>
